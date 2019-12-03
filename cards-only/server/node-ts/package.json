@@ -1,0 +1,32 @@
+{
+  "name": "elements-modal-demo",
+  "version": "1.0.0",
+  "description": "Stripe Elements wrapper",
+  "keywords": [
+    "stripe",
+    "payment processing",
+    "credit cards",
+    "elements"
+  ],
+  "main": "./dist/server.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node ."
+  },
+  "author": "Stripe <support@stripe.com> (https://stripe.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "stripe": "https://github.com/stripe/stripe-node/tarball/ralex/typescript"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.14",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
